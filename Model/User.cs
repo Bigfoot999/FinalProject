@@ -10,6 +10,7 @@ namespace FinalProject.Model
     public class User : Person
     {
         public int Id { get; set; }
+        public List<TaskJob> lsTask { get; set; }
         public string Role { get; set; }
         public User(string name, string gender, DateTime yearOfBirth, string role) : base(name, gender, yearOfBirth)
         {
