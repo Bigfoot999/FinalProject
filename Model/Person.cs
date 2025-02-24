@@ -8,14 +8,14 @@ namespace FinalProject.Model
 {
     public abstract class Person
     {
-        public string name { get; set; } = null;
-        public string gender { get; set; } = null;
+        public string Name { get; set; } = null;
+        public string Gender { get; set; } = null;
         public DateTime YearOfBirth { get; set; }
 
         public Person(string name, string gender, DateTime yearOfBirth)
         {
-            this.name = name;
-            this.gender = gender;
+            this.Name = name;
+            this.Gender = gender;
             YearOfBirth = yearOfBirth;
         }
         public Person() { }
