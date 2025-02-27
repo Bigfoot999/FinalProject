@@ -71,5 +71,18 @@ namespace FinalProject.Repository
             }
             return "Cập nhật thất bại!";
         }
+
+        public string deleteUser(int id)
+        {
+            foreach (User user in lsUser)
+            {
+                if (user.Id == id)
+                {
+                    lsUser.Remove(user);
+                    return "Xóa User thành công!";
+                }
+            }
+            return "Xóa User thất bại!";
+        }
     }
 }

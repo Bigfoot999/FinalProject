@@ -32,5 +32,7 @@ namespace FinalProject.Controller
         {
             return userRepository.updateUser(id, Name, Gender, Year, role);
         }
-    }
+        public string deleteUser(int id) {
+            return userRepository.deleteUser(id);
+        }
 }
